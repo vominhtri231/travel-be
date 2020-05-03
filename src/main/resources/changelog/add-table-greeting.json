@@ -1,0 +1,52 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "add-table-greeting",
+        "author": "tmvo",
+        "changes": [
+          {
+            "createTable": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "int"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "message",
+                    "type": "varchar(50)"
+                  }
+                }
+              ],
+              "schemaName": "public",
+              "tableName": "greeting"
+            }
+          },
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "value": "1"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "message",
+                    "value": "hello world"
+                  }
+                }
+              ],
+              "schemaName": "public",
+              "tableName": "greeting"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

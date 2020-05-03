@@ -1,0 +1,9 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "changelog/add-table-greeting.json"
+      }
+    }
+  ]
+}
